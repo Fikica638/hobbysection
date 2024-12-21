@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Section</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Gabarito', sans-serif;
+            background-color: #eaf7ff;
+            color: #003d66;
+        }
+        .hobby-section {
+            padding: 50px 0;
+        }
+        .hobby-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: linear-gradient(145deg, #fff, #d9f0ff);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .hobby-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .hobby-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #005b99;
+            transition: color 0.3s ease;
+        }
+        .hobby-card:hover .hobby-icon {
+            color: #008cdd;
+        }
+        .hobby-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #002a4a;
+        }
+        .hobby-description {
+            font-size: 1rem;
+            color: #005b99;
+        }
+        /* Animations */
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container hobby-section">
+        <h2 class="text-center mb-5">My Hobbies</h2>
+        <div class="row g-4">
+            <!-- Hobby 1 -->
+            <div class="col-md-4">
+                <div class="hobby-card fade-in-up">
+                    <div class="hobby-icon">🎨</div>
+                    <h3 class="hobby-title">Painting</h3>
+                    <p class="hobby-description">Exploring creativity with colors and brush strokes.</p>
+                </div>
+            </div>
+            <!-- Hobby 2 -->
+            <div class="col-md-4">
+                <div class="hobby-card fade-in-up">
+                    <div class="hobby-icon">🎸</div>
+                    <h3 class="hobby-title">Music</h3>
+                    <p class="hobby-description">Playing the guitar and composing relaxing tunes.</p>
+                </div>
+            </div>
+            <!-- Hobby 3 -->
+            <div class="col-md-4">
+                <div class="hobby-card fade-in-up">
+                    <div class="hobby-icon">📸</div>
+                    <h3 class="hobby-title">Photography</h3>
+                    <p class="hobby-description">Capturing moments and telling stories through my lens.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
